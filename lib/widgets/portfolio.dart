@@ -62,7 +62,7 @@ class _PortfolioState extends State<Portfolio> {
                   "By using firebase as a backend , I developed a flutter app for shoping online ,Cart ",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 0.01 * w,
+                      fontSize: 0.009 * w,
                       color: Colors.black),
                 ),
               ),
@@ -71,7 +71,7 @@ class _PortfolioState extends State<Portfolio> {
                 "Technologies Used",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 0.012 * w,
+                    fontSize: 0.01 * w,
                     color: Colors.black),
               ),
               SizedBox(height: 0.01 * h),
@@ -112,8 +112,11 @@ class _PortfolioState extends State<Portfolio> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: .04 * w),
                 child: MaterialButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0.009 * w),
+                  ),
                   minWidth: w,
-                  height: 0.06 * h,
+                  height: 0.07 * h,
                   color: Colors.green,
                   onPressed: () {},
                   child: Text(
