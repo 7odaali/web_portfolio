@@ -73,6 +73,8 @@ class _ToCommunicateState extends State<ToCommunicate> {
               fontWeight: FontWeight.bold,
               fontSize: 0.013 * w,
               color: Colors.black),
+        ),SizedBox(
+          height: 0.01 * h,
         ),
         Text(
           "I have graduated from faculty of engineering in 2024 . I have been developing Flutter Apps for 6 months",
