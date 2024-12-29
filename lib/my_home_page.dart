@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_app/widgets/top_screen.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -10,15 +11,14 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(centerTitle: true,
-      title: const Text("mahmoud"),
-    ),
-      body: const Center(
-        child: Column(
-          children: [
-            Text("data")
-          ],
-        ),
+    double w = MediaQuery.sizeOf(context).width;
+    double h = MediaQuery.sizeOf(context).height;
+    return Scaffold(
+      appBar: AppBar(),
+      body: Column(
+        children: [
+          TopScreen(),
+        ],
       ),
     );
   }
