@@ -73,7 +73,8 @@ class _ToCommunicateState extends State<ToCommunicate> {
               fontWeight: FontWeight.bold,
               fontSize: 0.013 * w,
               color: Colors.black),
-        ),SizedBox(
+        ),
+        SizedBox(
           height: 0.01 * h,
         ),
         Text(

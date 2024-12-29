@@ -44,9 +44,10 @@ class _TopScreenState extends State<TopScreen> {
                     Text(
                       "Cairo",
                       style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 0.012 * w,
-                          color: const Color(0xFF1565C0)),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 0.012 * w,
+                        color: const Color(0xFF1565C0),
+                      ),
                     )
                   ],
                 ),
@@ -57,9 +58,10 @@ class _TopScreenState extends State<TopScreen> {
                     Text(
                       "23 Years Old  ",
                       style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 0.012 * w,
-                          color: const Color(0xFF1565C0)),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 0.012 * w,
+                        color: const Color(0xFF1565C0),
+                      ),
                     ),
                     const Icon(
                       Icons.man,
@@ -68,9 +70,10 @@ class _TopScreenState extends State<TopScreen> {
                     Text(
                       "Male",
                       style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 0.012 * w,
-                          color: const Color(0xFF1565C0)),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 0.012 * w,
+                        color: const Color(0xFF1565C0),
+                      ),
                     )
                   ],
                 )
