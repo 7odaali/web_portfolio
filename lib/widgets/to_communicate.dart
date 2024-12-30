@@ -12,6 +12,9 @@ class _ToCommunicateState extends State<ToCommunicate> {
   Widget build(BuildContext context) {
     double w = MediaQuery.sizeOf(context).width;
     double h = MediaQuery.sizeOf(context).height;
+    final textColor = Theme.of(context).textTheme.bodyLarge?.color ?? Colors.black;
+    final accentColor = Theme.of(context).primaryColor;
+
     return Column(
       children: [
         Row(
@@ -72,7 +75,7 @@ class _ToCommunicateState extends State<ToCommunicate> {
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 0.017 * w,
-              color: Colors.black),
+              color: textColor),
         ),
         SizedBox(
           height: 0.01 * h,
@@ -82,7 +85,7 @@ class _ToCommunicateState extends State<ToCommunicate> {
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 0.02 * w,
-              color: const Color(0xFF1565C0)),
+              color: accentColor),
         ),
       ],
     );

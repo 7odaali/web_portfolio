@@ -12,6 +12,7 @@ class _TechnologiesState extends State<Technologies> {
   Widget build(BuildContext context) {
     double w = MediaQuery.sizeOf(context).width;
     double h = MediaQuery.sizeOf(context).height;
+    final textColor = Theme.of(context).textTheme.bodyLarge?.color ?? Colors.black;
 
     int columns = (w > 1200)
         ? 7
@@ -31,7 +32,7 @@ class _TechnologiesState extends State<Technologies> {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 0.017 * w,
-            color: Colors.black,
+            color: textColor,
           ),
         ),
         SizedBox(height: 0.015 * h),

@@ -12,6 +12,8 @@ class _PortfolioState extends State<Portfolio> {
   Widget build(BuildContext context) {
     double w = MediaQuery.sizeOf(context).width;
     double h = MediaQuery.sizeOf(context).height;
+    final textColor = Theme.of(context).textTheme.bodyLarge?.color ?? Colors.black;
+
 
     int columns = (w >= 1000)
         ? 3
@@ -69,7 +71,7 @@ class _PortfolioState extends State<Portfolio> {
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 0.025 * w,
-              color: Colors.black),
+              color: textColor),
         ),
         Text(
           "Portfolio of some relevant projects:",
