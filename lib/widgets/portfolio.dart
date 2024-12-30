@@ -13,7 +13,7 @@ class _PortfolioState extends State<Portfolio> {
     double w = MediaQuery.sizeOf(context).width;
     double h = MediaQuery.sizeOf(context).height;
 
-    int columns = (w > 1200)
+    /* int columns = (w > 1200)
         ? 4
         : (w > 700)
             ? 3
@@ -28,10 +28,51 @@ class _PortfolioState extends State<Portfolio> {
         : (columns == 3)
             ? 0.42 * h
             : (columns == 2)
-                ? 0.3 * h
-                : 0.3 * h;
+                ? 0.28 * h
+                : 0.3 * h;*/
+    int columns = (w >= 1000)
+        ? 3
+        : (w >= 900)
+            ? 3
+            : (w >= 800)
+                ? 2
+                : (w >= 700)
+                    ? 2
+                    : (w >= 600)
+                        ? 2
+                        : (w >= 500)
+                            ? 2
+                            : (w >= 400)
+                                ? 2
+                                : 1;
 
-    double itemWidth = w / columns - 0.02 * w;
+    double itemHeight;
+
+    if (w >= 1200) {
+      itemHeight = 0.5 * h;
+    } else if (w >= 1150) {
+      itemHeight = 0.42 * h;
+    } else if (w >= 1100) {
+      itemHeight = 0.42 * h;
+    } else if (w >= 1000) {
+      itemHeight = 0.41 * h;
+    } else if (w >= 900) {
+      itemHeight = 0.39 * h;
+    } else if (w >= 800) {
+      itemHeight = 0.35 * h;
+    } else if (w >= 700) {
+      itemHeight = 0.33 * h;
+    } else if (w >= 600) {
+      itemHeight = 0.31 * h;
+    } else if (w >= 500) {
+      itemHeight = 0.3 * h;
+    } else if (w >= 400) {
+      itemHeight = 0.28 * h;
+    } else {
+      itemHeight = 0.23 * h;
+    }
+
+    double itemWidth = 0.8 * w / columns - 0.02 * w;
 
     return Column(
       children: [
@@ -135,7 +176,9 @@ class _PortfolioState extends State<Portfolio> {
                       ),
                     ],
                   ),
-                  const Spacer(),
+                  SizedBox(
+                    height: 0.02 * h,
+                  ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: .04 * w),
                     child: MaterialButton(
