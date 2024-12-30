@@ -13,23 +13,6 @@ class _PortfolioState extends State<Portfolio> {
     double w = MediaQuery.sizeOf(context).width;
     double h = MediaQuery.sizeOf(context).height;
 
-    /* int columns = (w > 1200)
-        ? 4
-        : (w > 700)
-            ? 3
-            : (w > 500)
-                ? 3
-                : (w > 400)
-                    ? 2
-                    : 1;
-
-    double itemHeight = (columns == 4)
-        ? 0.52 * h
-        : (columns == 3)
-            ? 0.42 * h
-            : (columns == 2)
-                ? 0.28 * h
-                : 0.3 * h;*/
     int columns = (w >= 1000)
         ? 3
         : (w >= 900)
@@ -48,8 +31,10 @@ class _PortfolioState extends State<Portfolio> {
 
     double itemHeight;
 
-    if (w >= 1200) {
+    if (w >= 1250) {
       itemHeight = 0.5 * h;
+    } else if (w >= 1200) {
+      itemHeight = 0.44 * h;
     } else if (w >= 1150) {
       itemHeight = 0.42 * h;
     } else if (w >= 1100) {
@@ -60,19 +45,22 @@ class _PortfolioState extends State<Portfolio> {
       itemHeight = 0.39 * h;
     } else if (w >= 800) {
       itemHeight = 0.35 * h;
-    } else if (w >= 700) {
+    } else if (w >= 713) {
       itemHeight = 0.33 * h;
+    } else if (w >= 712) {
+      itemHeight = 0.63 * h;
     } else if (w >= 600) {
       itemHeight = 0.31 * h;
     } else if (w >= 500) {
       itemHeight = 0.3 * h;
     } else if (w >= 400) {
-      itemHeight = 0.28 * h;
+      itemHeight = 0.3 * h;
     } else {
-      itemHeight = 0.23 * h;
+      itemHeight = 0.27 * h;
     }
 
     double itemWidth = 0.8 * w / columns - 0.02 * w;
+    double buttonWidth = 0.5 * w / columns;
 
     return Column(
       children: [
@@ -185,7 +173,7 @@ class _PortfolioState extends State<Portfolio> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(0.009 * w),
                       ),
-                      minWidth: w,
+                      minWidth: buttonWidth,
                       height: 0.07 * h,
                       color: Colors.green,
                       onPressed: () {},
@@ -193,7 +181,7 @@ class _PortfolioState extends State<Portfolio> {
                         "GITHUB LINK",
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 0.015 * w,
+                            fontSize: 0.017 * w,
                             color: Colors.black),
                       ),
                     ),

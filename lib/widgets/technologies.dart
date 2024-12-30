@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class Technologies extends StatefulWidget {
@@ -114,7 +113,7 @@ class _TechnologiesState extends State<Technologies> {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 0.005 * h),
       width: width,
-      height: 0.065 * h,
+      height: 0.07 * h,
       decoration: BoxDecoration(
         color: Colors.grey[300],
         borderRadius: BorderRadius.circular(10),

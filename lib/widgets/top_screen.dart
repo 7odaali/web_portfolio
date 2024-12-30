@@ -23,7 +23,7 @@ class _TopScreenState extends State<TopScreen> {
                   "Mahmoud Ali Ebaid",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 0.02 * w,
+                      fontSize: 0.022 * w,
                       color: Colors.black),
                 ),
                 SizedBox(height: 0.0015 * h),
@@ -34,7 +34,7 @@ class _TopScreenState extends State<TopScreen> {
                       "Software Engineer,  ",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 0.012 * w,
+                          fontSize: 0.015 * w,
                           color: const Color(0xFF1565C0)),
                     ),
                     const Icon(
@@ -45,7 +45,7 @@ class _TopScreenState extends State<TopScreen> {
                       "Cairo",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 0.012 * w,
+                        fontSize: 0.015 * w,
                         color: const Color(0xFF1565C0),
                       ),
                     )
@@ -59,7 +59,7 @@ class _TopScreenState extends State<TopScreen> {
                       "23 Years Old  ",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 0.012 * w,
+                        fontSize: 0.015 * w,
                         color: const Color(0xFF1565C0),
                       ),
                     ),
@@ -71,7 +71,7 @@ class _TopScreenState extends State<TopScreen> {
                       "Male",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 0.012 * w,
+                        fontSize: 0.015 * w,
                         color: const Color(0xFF1565C0),
                       ),
                     )

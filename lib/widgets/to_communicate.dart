@@ -81,7 +81,7 @@ class _ToCommunicateState extends State<ToCommunicate> {
           "I have graduated from faculty of engineering in 2024 . I have been developing Flutter Apps for 6 months",
           style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 0.015 * w,
+              fontSize: 0.02 * w,
               color: const Color(0xFF1565C0)),
         ),
       ],
