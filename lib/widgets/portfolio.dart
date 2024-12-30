@@ -12,8 +12,8 @@ class _PortfolioState extends State<Portfolio> {
   Widget build(BuildContext context) {
     double w = MediaQuery.sizeOf(context).width;
     double h = MediaQuery.sizeOf(context).height;
-    final textColor = Theme.of(context).textTheme.bodyLarge?.color ?? Colors.black;
-
+    final textColor =
+        Theme.of(context).textTheme.bodyLarge?.color ?? Colors.black;
 
     int columns = (w >= 1000)
         ? 3
@@ -83,7 +83,7 @@ class _PortfolioState extends State<Portfolio> {
         ),
         SizedBox(height: 0.02 * h),
         Wrap(
-          spacing: 0.01 * w,
+          spacing: 0.02 * w,
           runSpacing: 0.02 * h,
           children: List.generate(
             8,

@@ -39,7 +39,7 @@ class _TechnologiesState extends State<Technologies> {
         LayoutBuilder(
           builder: (context, constraints) {
             return Wrap(
-              spacing: 0.01 * w,
+              spacing: 0.015  * w,
               runSpacing: 0.01 * h,
               children: [
                 myContainer(
