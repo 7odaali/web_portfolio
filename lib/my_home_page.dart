@@ -37,17 +37,20 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           body: SingleChildScrollView(
-            child: Column(
-              children: [
-                const TopScreen(),
-                SizedBox(height: 0.04 * h),
-                const ToCommunicate(),
-                SizedBox(height: 0.015 * h),
-                const Technologies(),
-                SizedBox(height: 0.035 * h),
-                const Portfolio(),                SizedBox(height: 0.3 * h),
+            child: Padding(
+              padding:  EdgeInsets.symmetric(horizontal: 0.05*w),
+              child: Column(
+                children: [
+                  const TopScreen(),
+                  SizedBox(height: 0.04 * h),
+                  const ToCommunicate(),
+                  SizedBox(height: 0.015 * h),
+                  const Technologies(),
+                  SizedBox(height: 0.035 * h),
+                  const Portfolio(),                SizedBox(height: 0.3 * h),
 
-              ],
+                ],
+              ),
             ),
           ),
         ));
