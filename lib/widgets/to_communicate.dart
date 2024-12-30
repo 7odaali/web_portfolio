@@ -71,7 +71,7 @@ class _ToCommunicateState extends State<ToCommunicate> {
           "I'm Mahmoud Ali , A Flutter Developer ",
           style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 0.013 * w,
+              fontSize: 0.017 * w,
               color: Colors.black),
         ),
         SizedBox(
@@ -81,7 +81,7 @@ class _ToCommunicateState extends State<ToCommunicate> {
           "I have graduated from faculty of engineering in 2024 . I have been developing Flutter Apps for 6 months",
           style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 0.011 * w,
+              fontSize: 0.015 * w,
               color: const Color(0xFF1565C0)),
         ),
       ],
